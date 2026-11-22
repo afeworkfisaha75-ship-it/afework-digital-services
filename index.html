@@ -1,0 +1,1043 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Afework Digital Services provides data entry, virtual assistance, customer support, English-Amharic translation and digital services.">
+<meta name="theme-color" content="#0b1830">
+
+<title>Afework Digital Services | Professional Digital Support</title>
+
+<style>
+:root {
+  --navy: #0b1830;
+  --navy2: #132c4e;
+  --blue: #2376c5;
+  --teal: #13b8a6;
+  --gold: #f4bd55;
+  --light: #f4f7fc;
+  --white: #fff;
+  --text: #29384d;
+  --muted: #718096;
+  --border: #e3eaf3;
+  --shadow: 0 15px 40px rgba(11,24,48,.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+a { text-decoration: none; }
+
+.container {
+  width: min(1120px, 92%);
+  margin: auto;
+}
+
+/* NAVIGATION */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,.96);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 3px 20px rgba(11,24,48,.07);
+}
+
+.nav-inner {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  color: var(--navy);
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -.5px;
+}
+
+.logo span { color: var(--teal); }
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: var(--navy);
+  font-size: .9rem;
+  font-weight: 700;
+  transition: .25s;
+}
+
+.nav-links a:hover { color: var(--teal); }
+
+.menu-btn {
+  display: none;
+  background: var(--navy);
+  color: white;
+  border: 0;
+  padding: 9px 13px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(19,184,166,.2), transparent 30%),
+    linear-gradient(130deg, #0b1830, #153c68 75%, #1769aa);
+  color: white;
+  padding: 105px 0 110px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 50%;
+  right: -120px;
+  bottom: -190px;
+  box-shadow: 0 0 0 35px rgba(255,255,255,.025),
+              0 0 0 70px rgba(255,255,255,.02);
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.35fr .8fr;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: rgba(19,184,166,.12);
+  border: 1px solid rgba(19,184,166,.45);
+  color: #9af3e6;
+  border-radius: 30px;
+  padding: 8px 16px;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5.5vw, 4.3rem);
+  line-height: 1.12;
+  letter-spacing: -1.8px;
+  margin-bottom: 23px;
+}
+
+.hero h1 span { color: var(--gold); }
+
+.hero-description {
+  color: #d6e2f0;
+  max-width: 600px;
+  font-size: 1.06rem;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 9px;
+  font-weight: 800;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--navy);
+  box-shadow: 0 8px 20px rgba(244,189,85,.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px);
+  background: white;
+}
+
+.btn-outline {
+  border: 1px solid rgba(255,255,255,.6);
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--navy);
+}
+
+.photo-frame {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.photo-frame::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  transform: rotate(-12deg);
+}
+
+.profile-photo {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 7px solid white;
+  box-shadow: 0 20px 50px rgba(0,0,0,.3);
+}
+
+/* TRUST STRIP */
+
+.trust-strip {
+  background: white;
+  padding: 22px 0;
+  box-shadow: 0 5px 20px rgba(11,24,48,.04);
+}
+
+.trust-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px 55px;
+  color: var(--navy);
+  font-size: .9rem;
+  font-weight: 800;
+}
+
+.trust-items span { color: var(--teal); }
+
+/* SECTIONS */
+
+section { padding: 85px 0; }
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading > span {
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .78rem;
+  font-weight: 900;
+}
+
+.section-heading h2 {
+  color: var(--navy);
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  margin: 8px 0;
+  letter-spacing: -.7px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  max-width: 600px;
+  margin: auto;
+}
+
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-card {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 36px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.about-card h3 {
+  color: var(--navy);
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.about-card p {
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.about-highlight {
+  background: linear-gradient(145deg, #102744, #1769aa);
+  color: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.about-highlight h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.highlight-item {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  margin: 18px 0;
+}
+
+.check {
+  color: var(--gold);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+/* SKILLS */
+
+.skills-section, .projects-section {
+  background: #eaf1f9;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skill {
+  background: white;
+  color: var(--navy);
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-weight: 800;
+  font-size: .9rem;
+  transition: .25s;
+}
+
+.skill:hover {
+  background: var(--navy);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* CARDS */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+
+.card {
+  background: white;
+  padding: 29px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 6px 22px rgba(11,24,48,.04);
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow);
+  border-color: rgba(19,184,166,.5);
+}
+
+.card-icon {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  background: #e3f7f4;
+  color: var(--teal);
+  border-radius: 14px;
+  font-size: 1.7rem;
+  margin-bottom: 19px;
+}
+
+.card h3 {
+  color: var(--navy);
+  font-size: 1.12rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: .94rem;
+}
+
+/* PROJECTS */
+
+.project-label {
+  display: inline-block;
+  background: #e6f6f3;
+  color: #087e72;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-top: 17px;
+  font-size: .76rem;
+  font-weight: 800;
+}
+
+/* CTA */
+
+.cta {
+  padding: 65px 25px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(120deg, #10243e, #1769aa);
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 12px;
+}
+
+.cta p {
+  color: #dbe8f6;
+  margin-bottom: 25px;
+}
+
+/* CONTACT */
+
+.contact-section { background: white; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.contact-info {
+  background: linear-gradient(145deg, #0b1830, #17436e);
+  color: white;
+  padding: 35px;
+  border-radius: 18px;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 14px;
+}
+
+.contact-info > p {
+  color: #d3e2f2;
+  margin-bottom: 25px;
+}
+
+.contact-detail { margin: 23px 0; overflow-wrap: anywhere; }
+
+.contact-detail strong {
+  display: block;
+  color: #8de9dd;
+  font-size: .83rem;
+  margin-bottom: 5px;
+}
+
+.contact-detail a { color: white; }
+
+.contact-detail a:hover { color: var(--gold); }
+
+.contact-form {
+  background: #f8faff;
+  border: 1px solid var(--border);
+  padding: 35px;
+  border-radius: 18px;
+}
+
+.contact-form h3 {
+  color: var(--navy);
+  font-size: 1.4rem;
+  margin-bottom: 22px;
+}
+
+.form-group { margin-bottom: 17px; }
+
+.form-group label {
+  display: block;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 7px;
+  font-size: .9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d5dfeb;
+  border-radius: 9px;
+  background: white;
+  font: inherit;
+  font-size: .94rem;
+  color: var(--text);
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(19,184,166,.12);
+}
+
+.form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  background: #071326;
+  color: #c9d6e5;
+  padding: 40px 15px;
+  text-align: center;
+}
+
+footer strong {
+  color: white;
+  font-size: 1.15rem;
+}
+
+footer p { margin: 7px 0; font-size: .88rem; }
+
+.back-top {
+  display: inline-block;
+  color: #8de9dd;
+  margin-top: 15px;
+  font-weight: 800;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content > div {
+  animation: fadeUp .8s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* TABLET */
+
+@media(max-width: 850px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 45px;
+  }
+
+  .photo-frame { grid-row: 1; }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons { justify-content: center; }
+
+  .about-grid { grid-template-columns: 1fr; }
+
+  .cards { grid-template-columns: repeat(2, 1fr); }
+
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* MOBILE */
+
+@media(max-width: 600px) {
+  .nav-inner {
+    min-height: 68px;
+    flex-wrap: wrap;
+  }
+
+  .menu-btn { display: block; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0;
+    padding-bottom: 12px;
+  }
+
+  .nav-links.open { display: flex; }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 5px;
+  }
+
+  .hero { padding: 65px 0; }
+
+  .hero h1 { letter-spacing: -.8px; }
+
+  .profile-photo {
+    width: 205px;
+    height: 205px;
+  }
+
+  .photo-frame::before {
+    width: 225px;
+    height: 225px;
+  }
+
+  .cards { grid-template-columns: 1fr; }
+
+  section { padding: 60px 0; }
+
+  .about-card, .about-highlight,
+  .contact-info, .contact-form {
+    padding: 24px;
+  }
+
+  .trust-items { gap: 12px 22px; font-size: .8rem; }
+
+  .cta { padding: 45px 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="#home" class="logo">Afework <span>Digital.</span></a>
+
+    <button class="menu-btn" id="menuBtn"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="navLinks">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container hero-content">
+
+    <div>
+      <span class="hero-label">✦ WELCOME TO AFEWORK DIGITAL SERVICES</span>
+
+      <h1>
+        Smart Digital Support for
+        <span>Your Business.</span>
+      </h1>
+
+      <p class="hero-description">
+        Hello, I'm Afework Fisaha Mulatu. I help individuals
+        and businesses with data entry, virtual assistance,
+        customer message support, English–Amharic translation
+        and digital solutions.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-primary">Explore Services →</a>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+      </div>
+    </div>
+
+    <div class="photo-frame">
+      <img src="myphoto.jpg"
+        alt="Afework Fisaha Mulatu"
+        class="profile-photo">
+    </div>
+
+  </div>
+</header>
+
+<div class="trust-strip">
+  <div class="container trust-items">
+    <div><span>✓</span> Accuracy</div>
+    <div><span>✓</span> Clear Communication</div>
+    <div><span>✓</span> Organized Work</div>
+    <div><span>✓</span> Digital Solutions</div>
+  </div>
+</div>
+
+<main>
+
+<section id="about">
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Get to know me</span>
+      <h2>About Me</h2>
+      <p>Reliable digital assistance with a focus on quality and communication.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Hello, I'm Afework!</h3>
+
+        <p>
+          My name is Afework Fisaha Mulatu. I provide digital
+          support services, including data entry, virtual
+          assistance, customer message support, and
+          English–Amharic translation.
+        </p>
+
+        <p>
+          I focus on accuracy, clear communication,
+          organization, and completing tasks carefully.
+          I am continuously developing my spreadsheet,
+          computer, and web development skills.
+        </p>
+
+        <p>
+          My goal is to help businesses save time,
+          organize information, and communicate
+          effectively with their customers.
+        </p>
+      </div>
+
+      <div class="about-highlight">
+        <h3>Why Work With Me?</h3>
+
+        <div class="highlight-item">
+          <span class="check">✓</span>
+          <div><strong>Attention to Detail</strong><br>Careful and organized task handling.</div>
+        </div>
+
+        <div class="highlight-item">
+          <span class="check">✓</span>
+          <div><strong>Clear Communication</strong><br>Professional and polite customer communication.</div>
+        </div>
+
+        <div class="highlight-item">
+          <span class="check">✓</span>
+          <div><strong>Continuous Learning</strong><br>Always improving digital and technical skills.</div>
+        </div>
+
+        <div class="highlight-item">
+          <span class="check">✓</span>
+          <div><strong>Flexible Digital Support</strong><br>Assistance with everyday online tasks.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="skills-section" id="skills">
+  <div class="container">
+    <div class="section-heading">
+      <span>My capabilities</span>
+      <h2>Digital Skills</h2>
+      <p>Tools and practical skills I am developing and using.</p>
+    </div>
+
+    <div class="skills-list">
+      <span class="skill">Data Entry</span>
+      <span class="skill">Google Sheets</span>
+      <span class="skill">Microsoft Excel</span>
+      <span class="skill">Copy Typing</span>
+      <span class="skill">Customer Support</span>
+      <span class="skill">Virtual Assistance</span>
+      <span class="skill">English–Amharic Translation</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">Document Organization</span>
+      <span class="skill">Social Media Assistance</span>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+
+    <div class="section-heading">
+      <span>What I offer</span>
+      <h2>My Services</h2>
+      <p>Practical digital assistance for everyday business needs.</p>
+    </div>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-icon">⌨</div>
+        <h3>Data Entry</h3>
+        <p>Entering, checking, formatting, and organizing information in spreadsheets and documents.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📋</div>
+        <h3>Virtual Assistance</h3>
+        <p>Supporting routine online tasks, document organization, and administrative activities.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">💬</div>
+        <h3>Customer Support</h3>
+        <p>Responding politely to customer questions and helping businesses manage messages.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🌐</div>
+        <h3>English–Amharic Translation</h3>
+        <p>Supporting written communication and translation between English and Amharic.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">💻</div>
+        <h3>Website Design</h3>
+        <p>Building and practicing responsive websites using HTML and CSS.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📱</div>
+        <h3>Social Media Assistance</h3>
+        <p>Helping businesses organize page messages and communicate with customers.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="projects-section" id="projects">
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Selected work</span>
+      <h2>Portfolio Projects</h2>
+      <p>Examples of my digital skills and practice projects.</p>
+    </div>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-icon">💻</div>
+        <h3>Personal Business Website</h3>
+        <p>A responsive HTML and CSS website introducing digital services and professional skills.</p>
+        <span class="project-label">HTML • CSS • Responsive Design</span>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📊</div>
+        <h3>Spreadsheet Practice</h3>
+        <p>A sample data organization project using spreadsheet tables, formulas, and charts.</p>
+        <span class="project-label">Excel • Google Sheets</span>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📝</div>
+        <h3>Data Entry Practice</h3>
+        <p>Organizing sample records and arranging information into clear structured tables.</p>
+        <span class="project-label">Data Entry • Organization</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta">
+      <h2>Let's Build Something Great Together</h2>
+      <p>Need reliable digital assistance for your business or project?</p>
+      <a href="#contact" class="btn btn-primary">Contact Me Today →</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Get in touch</span>
+      <h2>Contact Me</h2>
+      <p>Have a project or task? I would be happy to hear from you.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <h3>Let's Connect</h3>
+
+        <p>
+          I welcome inquiries about data entry,
+          virtual assistance, translation, customer
+          support, and digital services.
+        </p>
+
+        <div class="contact-detail">
+          <strong>FULL NAME</strong>
+          Afework Fisaha Mulatu
+        </div>
+
+        <div class="contact-detail">
+          <strong>EMAIL ADDRESS</strong>
+          <a href="mailto:afeworkfisaha75@gmail.com">afeworkfisaha75@gmail.com</a>
+        </div>
+
+        <div class="contact-detail">
+          <strong>LOCATION</strong>
+          Addis Ababa, Ethiopia
+        </div>
+      </div>
+
+      <form class="contact-form"
+        action="https://formsubmit.co/8dff53a091b091ffeae4949e6d650d4a"
+        method="POST">
+
+        <h3>Send a Message</h3>
+
+        <input type="hidden" name="_subject"
+          value="New Message - Afework Digital Services">
+
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="text" name="_honey"
+          style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name"
+            placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email"
+            placeholder="Enter your email address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Interested In</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option>Data Entry</option>
+            <option>Virtual Assistance</option>
+            <option>Customer Message Support</option>
+            <option>English–Amharic Translation</option>
+            <option>Website Design</option>
+            <option>Social Media Assistance</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message"
+            placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-btn">
+          Send Message →
+        </button>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p><strong>Afework Digital Services</strong></p>
+    <p>Data Entry • Virtual Assistance • Customer Support • Digital Solutions</p>
+    <p>© 2026 Afework Digital Services. All rights reserved.</p>
+    <a href="#home" class="back-top">Back to Top ↑</a>
+  </div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", isOpen);
+  menuBtn.textContent = isOpen ? "✕" : "☰";
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.textContent = "☰";
+  });
+});
+</script>
+
+</body>
+</html>
